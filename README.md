@@ -16,18 +16,25 @@
 
 ## Overview
 
-This project is an end-to-end Machine Learning web application that predicts the price of a house based on various housing features. A Linear Regression model is trained using the California Housing Dataset from Scikit-learn and deployed through a Flask web application. The application provides an easy-to-use web interface where users can enter housing details and receive an estimated house price instantly.
+This project demonstrates the complete workflow of building, training, and deploying a Machine Learning model as a web application. A Linear Regression model is trained using the California Housing Dataset from Scikit-learn and deployed using Flask on Render. Users can enter housing features through a web interface and receive an estimated house price instantly.
+
+---
+
+## Live Demo
+
+**Application:** https://end-to-end-render-deployment-project.onrender.com
 
 ---
 
 ## Features
 
-- Train a Machine Learning model using the California Housing dataset
-- Predict house prices using user input
-- Responsive web interface built with Flask
+- End-to-end Machine Learning project
+- House price prediction using Linear Regression
+- Model training with Scikit-learn
+- Interactive Flask web interface
 - Model serialization using Pickle
-- Ready for deployment on Render
-- Clean and modular project structure
+- Responsive frontend using HTML and CSS
+- Cloud deployment using Render
 
 ---
 
@@ -38,8 +45,8 @@ This project is an end-to-end Machine Learning web application that predicts the
 - Scikit-learn
 - Pandas
 - NumPy
-- HTML
-- CSS
+- HTML5
+- CSS3
 - Gunicorn
 - Render
 
@@ -47,7 +54,7 @@ This project is an end-to-end Machine Learning web application that predicts the
 
 ## Project Structure
 
-```
+```text
 End-to-End-Render-Deployment-Project/
 │
 ├── app.py
@@ -71,20 +78,20 @@ End-to-End-Render-Deployment-Project/
 
 ## Installation
 
-Clone the repository
+Clone the repository:
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/JayantChaudhary1980/End-to-End-Render-Deployment-Project
 cd End-to-End-Render-Deployment-Project
 ```
 
-Create a virtual environment
+Create a virtual environment:
 
 ```bash
 python -m venv venv
 ```
 
-Activate the virtual environment
+Activate the virtual environment.
 
 ### Windows
 
@@ -98,27 +105,27 @@ venv\Scripts\activate
 source venv/bin/activate
 ```
 
-Install the required packages
+Install the required packages:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-Train the model
+Train the model:
 
 ```bash
 python train_model.py
 ```
 
-Run the Flask application
+Run the Flask application:
 
 ```bash
 python app.py
 ```
 
-Open your browser and visit
+Open your browser:
 
-```
+```text
 http://127.0.0.1:5000
 ```
 
@@ -126,21 +133,25 @@ http://127.0.0.1:5000
 
 ## Deployment
 
-The application is configured for deployment on Render using:
+The application is deployed on **Render** as a Python Web Service using:
 
+- Flask
 - Gunicorn
 - Procfile
 - runtime.txt
+
+Render automatically rebuilds and redeploys the application whenever changes are pushed to the GitHub repository. :contentReference[oaicite:0]{index=0}
 
 ---
 
 ## Future Improvements
 
-- Support multiple regression models
-- Improve UI with Bootstrap
-- Add model performance metrics on the webpage
+- Add multiple Machine Learning models for comparison
+- Improve the user interface using Bootstrap
+- Display model evaluation metrics
 - Store prediction history in a database
-- Deploy using Docker
+- Dockerize the application
+- Add input validation and error handling
 
 ---
 
